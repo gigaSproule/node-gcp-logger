@@ -1,0 +1,11 @@
+**/node_modules/**
+**/dist/**
+@types/**
+coverage/**
+coverage-ts/**
+**/public/**
+.yarn/**
+.yarn_cache
+
+# ESLint config files are JS source files nonetheless
+!**/.eslintrc.js
