@@ -15,6 +15,8 @@
  * ALERT      (700) A person must take an action immediately.
  * EMERGENCY  (800) One or more systems are unusable.
  * @link https://cloud.google.com/logging/docs/reference/v2/rest/v2/LogEntry#logseverity
+ *
+ * Any extra properties that are provided will be added to `jsonPayload`.
  */
 
 const globalLogFields: { [key: string]: any } = {};
@@ -67,25 +69,25 @@ export const warning = (logMessage: LogMessage) => {
 };
 
 export const error = (logMessage: LogMessage) => {
-  console.log(
+  console.error(
     JSON.stringify({ severity: "ERROR", ...globalLogFields, ...logMessage })
   );
 };
 
 export const critical = (logMessage: LogMessage) => {
-  console.log(
+  console.error(
     JSON.stringify({ severity: "CRITICAL", ...globalLogFields, ...logMessage })
   );
 };
 
 export const alert = (logMessage: LogMessage) => {
-  console.log(
+  console.error(
     JSON.stringify({ severity: "ALERT", ...globalLogFields, ...logMessage })
   );
 };
 
 export const emergency = (logMessage: LogMessage) => {
-  console.log(
+  console.error(
     JSON.stringify({ severity: "EMERGENCY", ...globalLogFields, ...logMessage })
   );
 };
