@@ -41,7 +41,7 @@
     "eslint-plugin-jest": "^27.0.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-security": "^1.4.0",
-    "husky": "^7.0.4",
+    "husky": "^8.0.0",
     "jest": "^27.3.1",
     "jest-junit": "^16.0.0",
     "jest-mock-console": "^1.2.3",
